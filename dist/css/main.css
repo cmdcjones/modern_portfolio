@@ -57,9 +57,14 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
       border-radius: 50%;
       border: solid 3px #05e1ff; }
+      .menu-branding .portrait .temp-text {
+        margin: auto;
+        width: 250px;
+        line-height: 250px;
+        text-align: center;
+        vertical-align: middle; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -169,11 +174,24 @@ main {
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
 
-.bio-image {
+/** .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+} **/
+.portrait {
   grid-area: bioimage;
-  margin: auto;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  border: #05e1ff 3px solid; }
+  border: solid 3px #05e1ff; }
+  .portrait .temp-text {
+    margin: auto;
+    width: 250px;
+    line-height: 250px;
+    text-align: center;
+    vertical-align: middle; }
 
 .bio {
   grid-area: bio;
@@ -208,6 +226,27 @@ main {
       opacity: 0.5%;
       border-color: #05e1ff;
       transition: all 0.5s ease-out; }
+
+#contact h1 {
+  text-align: center; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: .5rem 1rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      background: #05e1ff;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
