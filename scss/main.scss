@@ -11,7 +11,7 @@ body{
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Century Gothic,Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 
@@ -26,7 +26,7 @@ h3 {
     &.lg-heading { //ampersand used to show attachment, not nesting
         font-size: 400%;
         letter-spacing: -3px;
-        font-weight: 600;
+        font-weight: 200;
         line-height: 4rem;
         margin-bottom: 2rem;
     }
@@ -151,14 +151,9 @@ main {
     grid-template-columns: repeat(3, 1fr);
 
     img {
+        height: 40vh;
         width: 100%;
         border: #fff 3px solid;
-
-        &:hover {
-            opacity: 0.5%;
-            border-color: $secondary-color;
-            @include easeOut;
-        }
     }
 }
 
