@@ -171,27 +171,22 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio'
+ 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
 
-/** .bio-image {
+.bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
-} **/
+    border: #05e1ff 3px solid;
+}
 .portrait {
   grid-area: bioimage;
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: solid 3px #05e1ff; }
-  .portrait .temp-text {
-    margin: auto;
-    width: 250px;
-    line-height: 250px;
-    text-align: center;
-    vertical-align: middle; }
 
 .bio {
   grid-area: bio;
@@ -301,7 +296,11 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage'
+ 'bio'
+ 'job1'
+ 'job2'
+ 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
